@@ -1,0 +1,10 @@
+com\retailstore\dao\IProductDao.class
+com\retailstore\dto\ProductDto.class
+com\retailstore\dao\impl\ProductDaoImpl$1.class
+com\retailstore\dao\impl\ProductDaoImpl.class
+com\retailstore\service\impl\ProductServiceImpl.class
+com\retailstore\service\IProductService.class
+com\retailstore\config\SwaggerConfig.class
+com\retailstore\controller\ProductController.class
+com\retailstore\ProductCatalogueServiceApplication.class
+com\retailstore\config\ApplicationConfig.class

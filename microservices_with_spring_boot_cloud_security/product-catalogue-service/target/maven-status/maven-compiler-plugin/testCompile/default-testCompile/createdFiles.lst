@@ -1,0 +1,3 @@
+com\retailstore\ProductCatalogueServiceApplicationTests.class
+com\retailstore\impl\ProductDaoImplTest.class
+com\retailstore\impl\ProductServiceImplTest.class

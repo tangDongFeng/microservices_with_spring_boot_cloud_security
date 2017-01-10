@@ -1,0 +1,9 @@
+G:\microservices_with_spring_boot_cloud_security\product-catalogue-service\src\main\java\com\retailstore\dao\impl\ProductDaoImpl.java
+G:\microservices_with_spring_boot_cloud_security\product-catalogue-service\src\main\java\com\retailstore\dao\IProductDao.java
+G:\microservices_with_spring_boot_cloud_security\product-catalogue-service\src\main\java\com\retailstore\service\IProductService.java
+G:\microservices_with_spring_boot_cloud_security\product-catalogue-service\src\main\java\com\retailstore\dto\ProductDto.java
+G:\microservices_with_spring_boot_cloud_security\product-catalogue-service\src\main\java\com\retailstore\controller\ProductController.java
+G:\microservices_with_spring_boot_cloud_security\product-catalogue-service\src\main\java\com\retailstore\service\impl\ProductServiceImpl.java
+G:\microservices_with_spring_boot_cloud_security\product-catalogue-service\src\main\java\com\retailstore\config\ApplicationConfig.java
+G:\microservices_with_spring_boot_cloud_security\product-catalogue-service\src\main\java\com\retailstore\config\SwaggerConfig.java
+G:\microservices_with_spring_boot_cloud_security\product-catalogue-service\src\main\java\com\retailstore\ProductCatalogueServiceApplication.java

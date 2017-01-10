@@ -1,0 +1,126 @@
+
+# Spring properties
+spring:
+  application:
+     name: edge-service  # Service registers under this name
+
+zuul:
+  #ignoredServices: '*'
+  routes:
+    greetings:
+      path: /greeting/**
+      serviceId: GREETING-SERVICE
+      stripPrefix: false
+
+    wcp:
+      path: /wcp/**
+      url: http://192.168.0.205:8080
+      stripPrefix: false
+    fir:
+       path: /vue/**
+       url: http://192.168.0.204:8081
+       
+    standardInterface:
+       path: /dm-sdweb/**
+       url: http://127.0.0.1:8181/dm-sdweb/
+       
+    dm-web:
+       path: /dm-web/**
+       url: http://192.168.0.178:8181/dm-web/
+	
+	
+    wangaobinglocal:
+       path: /vue2/**
+       url: http://192.168.0.178:8080
+	   
+    yuwenjinglocal:
+       path: /vue3/**
+       url: http://192.168.0.104:8888  
+	   
+    liuchangzeng:
+       path: /vue5/**
+       url: http://192.168.0.135:8888 
+	   
+    liulujian:
+       path: /vue6/**
+       url: http://192.168.0.27:8888
+	   
+    yangdawei:
+        path: /vue0/**
+        url: http://192.168.0.67:8888 
+	   
+	
+    foreignywj: 
+       path: /foreign3/**
+       url: http://192.168.0.124:8081
+	   
+    foreigndzj: 
+       path: /test/**
+       url: http://192.168.0.40:8081
+	   
+     foreignllj: 
+       path: /foreign6/**
+       url: http://192.168.0.196:8081
+    foreignlcz: 
+       path: /foreign5/**
+       url: http://192.168.0.135:8081 
+	   
+    test:
+      path: /test/**
+      url: http://192.168.0.40:8080/
+#      stripPrefix: false
+    web204:
+      path: /web204/**
+#      url: http://192.168.0.179:8888/
+      url: http://192.168.0.204:8081/web204/
+##      stripPrefix: false
+
+
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        enabled: true
+        healthcheck:
+            enabled: true
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+            defaultZone: http://admin:admin@localhost:8761/eureka/
+
+server:
+   port: 8989   # HTTP (Tomcat) port
+
+   
+auth-server: http://localhost:9999/uaa
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+        client-id: demo
+        client-secret: demo
+        access-token-uri: ${auth-server}/oauth/token
+        user-authorization-uri: ${auth-server}/oauth/authorize
+        scope: read, write
+    resource:
+      userInfoUri: ${auth-server}/user
+      token-info-uri: ${auth-server}/oauth/check_token
+      
+multipart:
+   enabled:true
+   maxFileSize:2000Mb
+   maxRequestSize:2000Mb
+   
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 120000
+
+ribbon:
+  ConnectTimeout: 60000
+  ReadTimeout: 60000
